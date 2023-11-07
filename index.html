@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Betacode</title>
+    <link rel="stylesheet" type="text/css" href="css/betacode.css"/>
+</head>
+
+<body>
+    <div class="betacode-anchor">
+        <textarea class="betacode-targetField" placeholder="Type here..."></textarea>
+    </div>
+
+    <br/>
+    <button id="bread" onclick="addTextarea()">asdf</button>
+
+    <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/betacode.js"></script>
+    <script>
+        function addTextarea(){
+            let a = document.createElement('textarea');
+            a.setAttribute('class','betacode-targetField');
+            $(".betacode-anchor")[0].appendChild(a);
+        }
+    </script>
+</body>
+
+</html>
