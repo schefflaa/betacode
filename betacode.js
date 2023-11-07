@@ -410,6 +410,7 @@ function wrap(targetField) {
     setTimeout(function() {
         targetField.closest('.betacode-container').find('.betacode-targetField').focus();
     }, 100);
+}
 
 /**
  * Displays suggestions of diacritcal marks based on the most recent typed characters (prepended with an #)
