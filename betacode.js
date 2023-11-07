@@ -407,8 +407,9 @@ function wrap(targetField) {
     targetField.wrap("<div class='betacode-container'></div>");
     // Appending the div for the display of suggestions as a sibling to the targetField
     $("<br/><div class='betacode-suggestion-panel'></div>").insertAfter(targetField);
-    targetField.closest('.betacode-container').find('.betacode-targetField').focus();
-}
+    setTimeout(function() {
+        targetField.closest('.betacode-container').find('.betacode-targetField').focus();
+    }, 100);
 
 /**
  * Displays suggestions of diacritcal marks based on the most recent typed characters (prepended with an #)
