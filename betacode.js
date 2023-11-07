@@ -354,10 +354,20 @@ $(document).ready(function () {
     // references the element that is closest to (possibly dynamically added) child-elements with the class="betacode-targetField"
     let anchor = $(".betacode-anchor");
 
+    $(".betacode-targetField").each(function() {
+        if ($(this).parent().attr("class") !== "betacode-container") {
+            // This target field has not been properly wrapped yet, it has been here on pageload
+            wrap($(this));
+        }
+    });
+
     anchor.on("focus", ".betacode-targetField", function (keycode) {
         if($(this).parent().attr("class") !== "betacode-container"){
-            // This targetfield has not been properly wrapped yet
+            // This targetfield has not been properly wrapped yet, i.e., it was dynamically added
             wrap($(this));
+            setTimeout(function() {
+                $(this).closest('.betacode-container').find('.betacode-targetField').focus();
+            }, 100);
         }
     });
 
@@ -407,9 +417,6 @@ function wrap(targetField) {
     targetField.wrap("<div class='betacode-container'></div>");
     // Appending the div for the display of suggestions as a sibling to the targetField
     $("<br/><div class='betacode-suggestion-panel'></div>").insertAfter(targetField);
-    setTimeout(function() {
-        targetField.closest('.betacode-container').find('.betacode-targetField').focus();
-    }, 100);
 }
 
 /**
