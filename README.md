@@ -2,7 +2,7 @@
 
 This tool is designed for people who need to type complex diacritical characters, such as œ̣̃́ (`#o1?-~/`).
 
-It facilitates the typing process by allowing these complex characters to be entered using alternative code. 
+It facilitates the typing process by allowing these characters to be entered using alternative code. 
 
 Start by typing `#` followed by the base letter and diacritical marks. 
 
