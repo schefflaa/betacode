@@ -358,7 +358,6 @@ $(document).ready(function () {
         if($(this).parent().attr("class") !== "betacode-container"){
             // This targetfield has not been properly wrapped yet
             wrap($(this));
-            $(this).focus();
         }
     });
 
@@ -408,7 +407,7 @@ function wrap(targetField) {
     targetField.wrap("<div class='betacode-container'></div>");
     // Appending the div for the display of suggestions as a sibling to the targetField
     $("<br/><div class='betacode-suggestion-panel'></div>").insertAfter(targetField);
-    targetField.focus();
+    targetField.closest('.betacode-container').find('.betacode-targetField').focus();
 }
 
 /**
