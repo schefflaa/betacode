@@ -20,11 +20,11 @@
     <script src="//code.jquery.com/jquery-3.4.1.js"></script>
     <script src="betacode.js"></script>
     <script>
-        function addTextarea(){
-            let a = document.createElement('textarea');
-            a.setAttribute('class','betacode-targetField');
-            $(".betacode-anchor")[0].appendChild(a);
-        }
+        // Wait for the DOM to be fully loaded
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".betacode-targetField").focus().click();
+            // add auto focus after page load
+        });
     </script>
 </body>
 
