@@ -354,16 +354,16 @@ $(document).ready(function () {
     // references the element that is closest to (possibly dynamically added) child-elements with the class="betacode-targetField"
     let anchor = $(".betacode-anchor");
 
-    $(".betacode-targetField").each(function() {
+    // These target fields have not been properly wrapped yet, they have been here on pageload
+    $(".betacode-targetField").each(function () {
         if ($(this).parent().attr("class") !== "betacode-container") {
-            // This target field has not been properly wrapped yet, it has been here on pageload
             wrap($(this));
         }
     });
 
-    anchor.on("focus", ".betacode-targetField", function (keycode) {
+    // This targetfield has not been properly wrapped yet, i.e., it was dynamically added
+    anchor.on("focus", ".betacode-targetField", function () {
         if($(this).parent().attr("class") !== "betacode-container"){
-            // This targetfield has not been properly wrapped yet, i.e., it was dynamically added
             wrap($(this));
             setTimeout(function() {
                 $(this).closest('.betacode-container').find('.betacode-targetField').focus();
