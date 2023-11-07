@@ -358,6 +358,7 @@ $(document).ready(function () {
         if($(this).parent().attr("class") !== "betacode-container"){
             // This targetfield has not been properly wrapped yet
             wrap($(this));
+            $(this).focus();
         }
     });
 
