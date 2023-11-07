@@ -1,10 +1,12 @@
 # Diacritic Typing Tool: Betacode
 
-This tool is designed for linguists and others who need to type complex diacritical characters, such as œ̣̃́ (`#o1?-~/`).
+This tool is designed for people who need to type complex diacritical characters, such as œ̣̃́ (`#o1?-~/`).
 
 It facilitates the typing process by allowing these complex characters to be entered using alternative code. 
 
-Start by typing `#` followed by the base letter and diacritical marks. Examples:
+Start by typing `#` followed by the base letter and diacritical marks. 
+
+Examples:
 - to type á in betacode: `#a/`
 - to type ë̄́ in betacode: `#e:-/`
 - to type ǭ́ in betacode: `#o4-/`
