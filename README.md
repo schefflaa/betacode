@@ -5,6 +5,9 @@ This tool is designed for people who need to type complex diacritical characters
 It facilitates the typing process by allowing these characters to be entered using alternative code. 
 
 
+[![Demo Betacode alpha](https://github.com/schefflaa/betacode/blob/main/demo.gif)](https://schefflaa.github.io/betacode/)
+
+
 ## Usage
 Start by typing `#` followed by the base letter (a-z) and then diacritical marks.
 
