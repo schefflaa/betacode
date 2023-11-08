@@ -4,7 +4,9 @@ This tool is designed for people who need to type complex diacritical characters
 
 It facilitates the typing process by allowing these characters to be entered using alternative code. 
 
-Start by typing `#` followed by the base letter and diacritical marks. 
+
+## Usage
+Start by typing `#` followed by the base letter (a-z) and then diacritical marks.
 
 Examples:
 - to type á in betacode: `#a/`
@@ -13,4 +15,22 @@ Examples:
 
 and so on.
 
-You are welcome to use, extend or modify this tool to suit your needs, but please remember to cite it appropriately in your work 🤝🏼
+The order to type the diacritic codes is bottom-up, and it remains consistent regardless of the base letter. 
+
+## Code Reference
+Here is a quick reference for the codes and their respective diacritics:
+
+- **Code: `/`** → Acute Accent:  ́
+- **Code: `\`** → Grave Accent:  ̀
+- **Code: `:`** → Diaeresis:  ̈
+- **Code: `-`** → Macron:  ̄
+- **Code: `!`** → Breve:  ˘
+- **Code: `~`** → Tilde:  ̃
+- **Code: `^`** → Caron:  ˇ
+- **Code: `^1`** → Circumflex:  ̂
+- **Code: `?`** → Dot Below:  ̣
+- **Code: `(`** → Cedilla:  ̧
+- **Code: `@`** → Ogonek:  ̨
+
+## Remarks
+You can adapt and extend this tool to suit your specific requirements. Don't forget to cite this tool appropriately if you use it in your work. 🤝🏼
