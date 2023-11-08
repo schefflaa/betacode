@@ -36,4 +36,6 @@ Here is a quick reference for the codes and their respective diacritics:
 - **Code: `@`** → Ogonek:  ̨
 
 ## Remarks
+The tool is neither perfect nor complete.
+
 You can adapt and extend this tool to suit your specific requirements. Don't forget to cite this tool appropriately if you use it in your work. 🤝🏼
