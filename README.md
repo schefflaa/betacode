@@ -1,4 +1,4 @@
-# Diacritic Typing Tool: Betacode
+# Diacritic Typing Tool: [Betacode](https://schefflaa.github.io/betacode/)
 
 This tool is designed for people who need to type complex diacritical characters, such as œ̣̃́ (`#o1?-~/`).
 
